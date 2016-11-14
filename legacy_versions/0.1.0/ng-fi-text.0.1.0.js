@@ -1,4 +1,4 @@
-/*! ng-fi-text v0.1.0 - 2014-11-10 
+/*! ng-fi-text v0.1.0 - 2016-11-14 
  *  License: MIT 
  *  Author: Leandro Bessone */
 
@@ -26,7 +26,7 @@ angular.module('ng-fi-text', [])
         var maxFontSize = attrs.ngFiTextMaxFontSize || false;
         // var minFontSize = attrs.ngFiTextMinFontSize || false;
         //var lineHeightMultiplier = attrs.ngFiTextLineHeightMultiplier || false;
-        var implementationType = attrs.hasOwnProperty( 'ngFiTextHtml' ) ? 'html' : 'text';
+        var implementationType = angular.isDefined(attrs.ngFiTextHtml) ? 'html' : 'text';
 
 
         // Internal Options

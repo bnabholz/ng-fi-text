@@ -22,7 +22,7 @@ angular.module('ng-fi-text', [])
         var maxFontSize = attrs.ngFiTextMaxFontSize || false;
         // var minFontSize = attrs.ngFiTextMinFontSize || false;
         //var lineHeightMultiplier = attrs.ngFiTextLineHeightMultiplier || false;
-        var implementationType = attrs.hasOwnProperty( 'ngFiTextHtml' ) ? 'html' : 'text';
+        var implementationType = angular.isDefined(attrs.ngFiTextHtml) ? 'html' : 'text';
 
 
         // Internal Options
